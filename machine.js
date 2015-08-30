@@ -36,7 +36,7 @@ extendObject = function ( orig_obj, ext_obj ) {
 };
 
 // ** object methods...
-sayHello = function () {
+soundMade = function () {
   print( this.hello_text + ' says ' + this.name );
   };
 
@@ -45,19 +45,18 @@ sayText = function ( text ) {
   };
 
 // ** makeMammal constructor
-makeMammal = function ( arg_map ) {
-  var mammal = {
-    is_warm_blooded : true,
-    has_fur : true,
-    leg_count : 4,
-    has_live_birth : true,
-    hello_text : 'grunt',
+makeMachine = function ( arg_map ) {
+  var machine = {
+    uses_gas : true,
+    made_of_metal : true,
+    has_engine : true;
+    hello_text : 'VROOM',
     name : 'anonymous',
-    say_hello : sayHello,
+    sound_made : soundMade,
     say_text : sayText
     };
   extendObject( mammal, arg_map );
-  return mammal;
+  return machine;
   };
 
 // ** use mammal constructor to create cat prototype
