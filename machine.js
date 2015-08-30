@@ -55,7 +55,7 @@ makeMachine = function ( arg_map ) {
     sound_made : soundMade,
     say_text : sayText
     };
-  extendObject( mammal, arg_map );
+  extendObject( machine, arg_map );
   return machine;
   };
 
