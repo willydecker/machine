@@ -1,9 +1,17 @@
+//var createObject, extendObject,
+  //sayHello, sayText, 
+  //makeMammal,
+  //catPrototype, monkeyPrototype, donkeyPrototype,
+  //makeCat, makeMonkey, makeDonkey,
+  //garfieldCat, boringDog, abeMonkey, assDonkey
+  //;
+  
 var createObject, extendObject,
-  sayHello, sayText, 
-  makeMammal,
-  catPrototype, monkeyPrototype, donkeyPrototype,
-  makeCat, makeMonkey, makeDonkey,
-  garfieldCat, boringDog, abeMonkey, assDonkey
+  soundMade, sayText,
+  makeMachine,
+  gravProto, antigravProto, //this is the vehicles following laws of gravity and not
+  makeCar, makePlane,
+  toyotaCar, lufthansaPlane, deltaPlane
   ;
 // ** Utility function to set inheritance
 // Cross-browser method to inherit Object.create()
