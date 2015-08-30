@@ -49,7 +49,7 @@ makeMachine = function ( arg_map ) {
   var machine = {
     uses_gas : true,
     made_of_metal : true,
-    has_engine : true;
+    has_engine : true,
     hello_text : 'VROOM',
     name : 'anonymous',
     sound_made : soundMade,
