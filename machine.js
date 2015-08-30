@@ -88,8 +88,8 @@ makePlane = function( arg_map ) {
 // ** car instance
 toyotaCar = makeCar({
   name : 'Toyota',
-  breaks_often : true;
-  lasts_forever : true;
+  breaks_often : true,
+  lasts_forever : true,
   });
 
 // lufthansa airlines
