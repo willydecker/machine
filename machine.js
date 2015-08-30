@@ -94,7 +94,7 @@ toyotaCar = makeCar({
 
 // lufthansa airlines
 lufthansaPlane = makePlane({
-  name : 'Lufthansa",
+  name : 'Lufthansa',
   leg_room : 1 // in feet
 });
 
