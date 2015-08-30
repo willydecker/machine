@@ -59,72 +59,55 @@ makeMachine = function ( arg_map ) {
   return machine;
   };
 
-// ** use mammal constructor to create cat prototype
-catPrototype = makeMammal({
-  has_whiskers : true,
-  hello_text : 'meow'
+// ** use mammal constructor to create gravity prototype
+gravProto = makeMachine({
+  has_tires : true,
+  hello_text : 'beep beep'
 });
 
-//monkey proto
-monkeyPrototype = makeMammal({
-  has_thumbs : true,
-  hello_text : 'oo-oo-ah-ah'
+//plane proto
+antigravProto = makeMachine({
+  has_wings : true,
+  hello_text : '*drops napalm*'
 });
 
-//donkey proto
-donkeyPrototype = makeMammal({
-  has_hooves : true,
-  hello_text : 'erhhh'
-});
-
-// ** cat constructor
-makeCat = function( arg_map ) {
-  var cat = Object.create( catPrototype );
-  extendObject( cat, arg_map );
-  return cat;
+// ** car constructor
+makeCar = function( arg_map ) {
+  var car = Object.create( gravProto );
+  extendObject( car, arg_map );
+  return car;
 };
 
-//monkey constuct
-makeMonkey = function( arg_map ) {
-  var monkey = Object.create( monkeyPrototype );
-  extendObject( monkey, arg_map );
-  return monkey;
-}
+//plane constuct
+makePlane = function( arg_map ) {
+  var plane = Object.create( antigravProto );
+  extendObject( plane, arg_map );
+  return plane;
+};
 
-//donkey constuct
-makeDonkey = function( arg_map ) {
-  var donkey = Object.create( donkeyPrototype );
-  extendObject( donkey, arg_map );
-  return donkey;
-}
-
-// ** cat instance
-garfieldCat = makeCat({
-  name : 'Garfield',
-  weight_lbs : 8.6
+// ** car instance
+toyotaCar = makeCar({
+  name : 'Toyota',
+  breaks_often : true;
+  lasts_forever : true;
   });
 
-// another cat 
-boringDog = makeCat({
-  name : 'Boring Dog',
-  favorite_game : 'Fetch and Hide'
+// lufthansa airlines
+lufthansaPlane = makePlane({
+  name : 'Lufthansa",
+  leg_room : 1 // in feet
 });
 
-// monkey
-abeMonkey = makeMonkey({
-  name : 'Abe",
-  commmon_hobby : 'Solving Mysteries'
+//delta airlines
+deltaPlane = makePlane({
+  name : 'Delta',
+  service : "Great"
 });
 
-//donkey
-assDonkey = makeDonkey({
-  name : 'Ass',
-  favorite_food : 'grass'
-});
-
-// ** cat instance method invocations
-garfieldCat.say_hello();
-garfieldCat.say_text('Purr...');
-boringDog.say_hello();
-abeMonkey.say_hello();
-assDonkey.say_hello();
+// ** car instance method invocations
+toyotaCar.sound_made();
+toyotaCar.say_text('I am a car!');
+lufthansaPlane.sound_made();
+lufthansaPlane.say_text('I am a plane!');
+deltaPlane.sound_made();
+deltaPlane.say_text('I am a plane too!');
